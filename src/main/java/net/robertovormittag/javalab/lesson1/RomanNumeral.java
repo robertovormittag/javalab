@@ -19,20 +19,14 @@ public class RomanNumeral {
 		return 0;
 	}
 
+	
 	/**
 	 * @return integer equivalent of this roman numeral
 	 */
 	public int intValue() {
+
 		int decimal = 0;
 		int lastNumber = 0;
-
-		// number = romano;
-
-		// romano = romano.toUpperCase();
-
-		// take the string roman number
-		// write algorithm to convert it to int
-		// return int
 
 		roman = roman.toUpperCase();
 		for (int x = roman.length() - 1; x >= 0; x--) {
@@ -79,7 +73,7 @@ public class RomanNumeral {
 			}
 
 		}
-		// System.out.println("eccomi"+decimal);
+
 		return decimal;
 	}
 
