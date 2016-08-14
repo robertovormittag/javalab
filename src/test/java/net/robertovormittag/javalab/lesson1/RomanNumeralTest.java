@@ -273,13 +273,66 @@ public class RomanNumeralTest {
 
 	}
 
-
-	// TODO add more invalid test cases
 	@Test(expected = Exception.class)
     public void shouldThrowExceptionFor_IIIII() {
 		new RomanNumeral("IIIII");
 	}
 	
+	@Test(expected = Exception.class)
+    public void shouldThrowExceptionFor_MMMMM() {
+		new RomanNumber("MMMMM");   
+	}
+	
+	@Test(expected = Exception.class)
+	public void shouldThrowExceptionFor_IIIII() {
+		new RomanNumber("IIIII");
+	}
+	
+	@Test(expected = Exception.class)
+	public void shouldThrowExceptionFor_IXIXXXXXVV() {
+		new RomanNumber("IXIXXXXXVV");
+	}
+	
+	@Test(expected = Exception.class)
+	public void shouldThrowExceptionFor_CAS0998EXXXI() {
+		new RomanNumber("CAS0998EXXXI");
+	}
+	
+	@Test(expected = Exception.class)
+	public void shouldThrowExceptionFor_1999() {
+		new RomanNumber("1999");
+	}
+	
+	@Test(expected = Exception.class)
+	public void shouldThrowExceptionFor_ABCDEFGHIII() {
+		new RomanNumber("ABCDEFGHIII");
+	}
+	
+	@Test(expected = Exception.class)
+	public void shouldThrowExceptionFor_MMIMM() {
+		new RomanNumber("MMIMM");
+	}
+	
+	@Test(expected = Exception.class)
+	public void shouldThrowExceptionFor_ixixmmixviv() {
+		new RomanNumber("ixixmmixviv");
+	}
+	
+	@Test(expected = Exception.class)
+	public void shouldThrowExceptionFor_DD() {
+		new RomanNumber("DD");
+	}
+	
+	@Test(expected = Exception.class)
+	public void shouldThrowExceptionFor_DID() {
+		new RomanNumber("DID");
+	}
+	
+	@Test(expected = Exception.class)
+	public void shouldThrowExceptionFor_MM_MMI() {
+		new RomanNumber("MM MMI");
+	}
+
 	// TODO add more test cases
 	@Test
 	public void testEquals(){
