@@ -267,7 +267,6 @@ public class RomanNumeralTest {
     public void shouldThrowExceptionForEmptyString() {
         new RomanNumeral("");
 	}
-	
 	@Test(expected = Exception.class)
     public void shouldThrowExceptionFor_IXC() {
 		new RomanNumeral("IXC");   
