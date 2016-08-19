@@ -302,9 +302,10 @@ public class RomanNumeralTest {
 	@Test
 	public void shouldCompareInstances() {
 		
-		//if (rn1.compareTo(rn2) == 1) {
-			// do stuff
-		//}
+		
+		assertTrue(rn1.compareTo(rn2) > 0);
+		assertEquals(rn1.compareTo(rn2), 0);
+	
 		
 	}
 	

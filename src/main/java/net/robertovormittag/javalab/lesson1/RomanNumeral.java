@@ -15,22 +15,15 @@ public class RomanNumeral {
 
 
 	// TODO implement this
-	public static int intValue(String roman) {
-		return 0;
-	}
-
-	
-	/**
-	 * @return integer equivalent of this roman numeral
-	 */
-	public int intValue() {
-
+	public static int intValue(String str) {
+		
 		int decimal = 0;
 		int lastNumber = 0;
 
-		roman = roman.toUpperCase();
-		for (int x = roman.length() - 1; x >= 0; x--) {
-			char convertNumber = roman.charAt(x);
+		str = str.toUpperCase();
+		
+		for (int x = str.length() - 1; x >= 0; x--) {
+			char convertNumber = str.charAt(x);
 
 			switch (convertNumber) {
 
@@ -75,6 +68,17 @@ public class RomanNumeral {
 		}
 
 		return decimal;
+
+	}
+
+	
+	/**
+	 * @return integer equivalent of this roman numeral
+	 */
+	public int intValue() {
+		
+		return intValue(this.roman);
+
 	}
 
 	private static int processDecimal(int decimal, int lastNumber, int lastDecimal) {
