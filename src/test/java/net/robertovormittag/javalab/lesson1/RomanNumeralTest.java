@@ -22,7 +22,7 @@ public class RomanNumeralTest {
 		* Convert I to 1
 		*/
 		RomanNumeral rn = new RomanNumeral("I");
-		int number = rn.convertToInteger();
+		int number = rn.intValue();
 		assertTrue(number == 1);
 	}
 	
@@ -30,231 +30,231 @@ public class RomanNumeralTest {
 	public void shouldConvert_II_to_2() {
 		/* Convert II to 2 */
 		RomanNumeral rn = new RomanNumeral("II");
-		int number = rn.convertToInteger();
+		int number = rn.intValue();
 		assertTrue(number == 2);
 	}
 	
 	@Test
 	public void shouldConvert_III_to_3() {
 		RomanNumeral rn = new RomanNumeral("III");
-		int number = rn.convertToInteger();
+		int number = rn.intValue();
 		assertTrue(number == 3);
 	}
 	
 	@Test
 	public void shouldConvert_IV_to_4() {
 		RomanNumeral rn = new RomanNumeral("IV");
-		int number = rn.convertToInteger();
+		int number = rn.intValue();
 		assertTrue(number == 4);
 	}
 	
 	@Test
 	public void shouldConvert_V_to_5() {
 		RomanNumeral rn = new RomanNumeral("V");
-		int number = rn.convertToInteger();
+		int number = rn.intValue();
 		assertTrue(number == 5);
 	}
 	
 	@Test
 	public void shouldConvert_VI_to_6() {
 		RomanNumeral rn = new RomanNumeral("VI");
-		int number = rn.convertToInteger();
+		int number = rn.intValue();
 		assertTrue(number == 6);
 	}
 	
 	@Test
 	public void shouldConvert_VII_to_7() {
 		RomanNumeral rn = new RomanNumeral("VII");
-		int number = rn.convertToInteger();
+		int number = rn.intValue();
 		assertTrue(number == 7);
 	}
 	
 	@Test
 	public void shouldConvert_VIII_to_8() {
 		RomanNumeral rn = new RomanNumeral("VIII");
-		int number = rn.convertToInteger();
+		int number = rn.intValue();
 		assertTrue(number == 8);
 	}
 	
 	@Test
 	public void shouldConvert_IX_to_9() {
 		RomanNumeral rn = new RomanNumeral("IX");
-		int number = rn.convertToInteger();
+		int number = rn.intValue();
 		assertTrue(number == 9);
 	}
 	
 	@Test
 	public void shouldConvert_X_to_10() {
 		RomanNumeral rn = new RomanNumeral("X");
-		int number = rn.convertToInteger();
+		int number = rn.intValue();
 		assertTrue(number == 10);
 	}
 	
 	@Test
 	public void shouldConvert_L_to_50() {
 		RomanNumeral rn = new RomanNumeral("L");
-		int number = rn.convertToInteger();
+		int number = rn.intValue();
 		assertTrue(number == 50);	
 	}
 	
 	@Test
 	public void shouldConvert_C_to_100() {
 		RomanNumeral rn = new RomanNumeral("C");
-		int number = rn.convertToInteger();
+		int number = rn.intValue();
 		assertTrue(number == 100);
 	}
 	
 	@Test
 	public void shouldConvert_D_to_500() {
 		RomanNumeral rn = new RomanNumeral("D");
-		int number = rn.convertToInteger();
+		int number = rn.intValue();
 		assertTrue(number == 500);
 	}
 	
 	@Test
     public void shouldCONVERT_M_to_1000() {
         RomanNumeral rn = new RomanNumeral("M");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number==1000);
 	}
 	
 	@Test
     public void shouldConvert_CMIII_to_903() {
 		RomanNumeral rn = new RomanNumeral("CMIII");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number == 903);
 	}
 	
 	@Test
     public void shouldConvert_CCXXXVI_to_236() {
 		RomanNumeral rn = new RomanNumeral("CCXXXVI");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number == 236);
 	}
 	
 	@Test
     public void shouldConvert_CLXXVII_to_67() {
 		RomanNumeral rn = new RomanNumeral("CLXXVII");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number == 177);
 	}
 	
 	@Test
     public void shouldConvert_MMMCCXLV_to_3245() {
 		RomanNumeral rn = new RomanNumeral("MMMCCXLV");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number == 3245);
 	}
 	
 	@Test
     public void shouldConvert_MMDLI_to_2551() {
 		RomanNumeral rn = new RomanNumeral("MMDLI");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number == 2551);
 	}
 	
 	@Test
     public void shouldConvert_MMMDCCCXCIX_to_3899() {
 		RomanNumeral rn = new RomanNumeral("MMMDCCCXCIX");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number == 3899);
 	}
 	
 	@Test
     public void shouldConvert_CCXXXII_to_232() {
 		RomanNumeral rn = new RomanNumeral("CCXXXII");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number == 232);
 	}
 	
 	@Test
     public void shouldConvert_MMIX_to_2009() {
 		RomanNumeral rn = new RomanNumeral("MMIX");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number == 2009);
 	}
 	
 	@Test
     public void shouldConvert_MDCCXIII_to_1713() {
 		RomanNumeral rn = new RomanNumeral("MDCCXIII");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number == 1713);
 	}
 	
 	@Test
     public void shouldConvert_MCCCXXIX_to_1329() {
 		RomanNumeral rn = new RomanNumeral("MCCCXXIX");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number == 1329);
 	}
 	
 	@Test
     public void shouldConvert_DCCCXLIX_to_849() {
 		RomanNumeral rn = new RomanNumeral("DCCCXLIX");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number == 849);
 	}
 	
 	@Test
     public void shouldConvert_MMMCCCLXXXII_to_3382() {
 		RomanNumeral rn = new RomanNumeral("MMMCCCLXXXII");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number == 3382);
 	}
 	
 	@Test
     public void shouldConvert_DCCLXXXI_to_781() {
 		RomanNumeral rn = new RomanNumeral("DCCLXXXI");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number == 781);
 	}
 	
 	@Test
     public void shouldConvert_MMCMLXXXIX_to_2989() {
 		RomanNumeral rn = new RomanNumeral("MMCMLXXXIX");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number == 2989);
 	}
 	
 	@Test
     public void shouldConvert_MMMCCXXXVIII_to_3238() {
 		RomanNumeral rn = new RomanNumeral("MMMCCXXXVIII");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number == 3238);
 	}
 	
 	@Test
     public void shouldConvert_MXXXIX_to_1039() {
 		RomanNumeral rn = new RomanNumeral("MXXXIX");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number == 1039);
 	}
 	
 	@Test
     public void shouldConvert_DCXLIII_to_643() {
 		RomanNumeral rn = new RomanNumeral("DCXLIII");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number == 643);
 	}
 	
 	@Test
     public void shouldConvert_MCCXCV_to_1295() {
 		RomanNumeral rn = new RomanNumeral("MCCXCV");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number == 1295);
 	}
 	
 	@Test
     public void shouldConvert_MMDCCCLIX_to_2859() {
 		RomanNumeral rn = new RomanNumeral("MMDCCCLIX");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number == 2859);
 	}
 	
 	@Test
     public void shouldConvert_MMCDXVIII_to_2418() {
 		RomanNumeral rn = new RomanNumeral("MMCDXVIII");
-        int number = rn.convertToInteger();
+        int number = rn.intValue();
         assertTrue(number == 2418);
 	}
 	
@@ -600,7 +600,14 @@ public class RomanNumeralTest {
 		Assert.assertTrue(rn1.hashCode() == rn2.hashCode());
 	}
 	
-	// TODO test instance comparison
+	@Test
+	public void shouldCompareInstances_M_XI() {
+		
+		RomanNumeral rn1 = new RomanNumeral("M");
+		RomanNumeral rn2 = new RomanNumeral("XI");
+		
+		assertTrue(rn1.compareTo(rn2) >0);
+	}
 	
 	@Test
 	public void shouldCompareInstances_MMM_MMM() {
@@ -608,49 +615,426 @@ public class RomanNumeralTest {
 		RomanNumeral rn1 = new RomanNumeral("MMM");
 		RomanNumeral rn2 = new RomanNumeral("MMM");
 		
-			if (rn1.compareTo(rn2) == -1){
-				Assert.assertTrue(rn1.compareTo(rn2) == -1);	
-			}
-			if (rn1.compareTo(rn2) == 1){
-				Assert.assertTrue(rn1.compareTo(rn2) == 1);
-			}
-			if (rn1.compareTo(rn2) == 0){
-				Assert.assertTrue(rn1.compareTo(rn2) == 0);
-			}
+		assertTrue(rn1.compareTo(rn2) == 0);
 	}
 	
 	@Test
-	public void shouldCompareInstances_M_XI() {
+	public void shouldCompareInstances_XXII_M() {
 		
-		RomanNumeral rn1 = new RomanNumeral("M");
-		RomanNumeral rn2 = new RomanNumeral("XI");
+		RomanNumeral rn1 = new RomanNumeral("XXII");
+		RomanNumeral rn2 = new RomanNumeral("M");
 		
-			if (rn1.compareTo(rn2) == -1){
-				Assert.assertTrue(rn1.compareTo(rn2) == -1);	
-			}
-			if (rn1.compareTo(rn2) == 1){
-				Assert.assertTrue(rn1.compareTo(rn2) == 1);
-			}
-			if (rn1.compareTo(rn2) == 0){
-				Assert.assertTrue(rn1.compareTo(rn2) == 0);
-			}
+		assertTrue(rn1.compareTo(rn2) < 0);
 	}
 	
-				
-		
-			
-		
-	
-
-		
-		
-	
-
-	
-	// TODO test toString method
 	@Test
-	public void testToString() {
+	public void shouldCompareInstances_XXI_MX() {
+		
+		RomanNumeral rn1 = new RomanNumeral("XXI");
+		RomanNumeral rn2 = new RomanNumeral("MX");
+		
+		assertTrue(rn1.compareTo(rn2) < 0);
 	}
+	
+	@Test
+	public void shouldCompareInstances_CCII_LV() {
+		
+		RomanNumeral rn1 = new RomanNumeral("CCII");
+		RomanNumeral rn2 = new RomanNumeral("LV");
+		
+		assertTrue(rn1.compareTo(rn2) > 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_DXLV_CDXXII() {
+		
+		RomanNumeral rn1 = new RomanNumeral("DXLV");
+		RomanNumeral rn2 = new RomanNumeral("CDXXII");
+		
+		assertTrue(rn1.compareTo(rn2) > 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_LVIII_LVIII() {
+		
+		RomanNumeral rn1 = new RomanNumeral("LVIII");
+		RomanNumeral rn2 = new RomanNumeral("LVIII");
+		
+		assertTrue(rn1.compareTo(rn2) == 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_IX_CDXIX() {
+		
+		RomanNumeral rn1 = new RomanNumeral("IX");
+		RomanNumeral rn2 = new RomanNumeral("CDXIX");
+		
+		assertTrue(rn1.compareTo(rn2) < 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_MMDCCLXXIV_MMDCCLXXIII() {
+		
+		RomanNumeral rn1 = new RomanNumeral("MMDCCLXXIV");
+		RomanNumeral rn2 = new RomanNumeral("MMDCCLXXIII");
+		
+		assertTrue(rn1.compareTo(rn2) > 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_CCCLXVIII_DLXXVII() {
+		
+		RomanNumeral rn1 = new RomanNumeral("CCCLXVIII");
+		RomanNumeral rn2 = new RomanNumeral("DLXXVII");
+		
+		assertTrue(rn1.compareTo(rn2) < 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_DCCCXXXIV_DCXCIX() {
+		
+		RomanNumeral rn1 = new RomanNumeral("DCCCXXXIV");
+		RomanNumeral rn2 = new RomanNumeral("DCXCIX");
+		
+		assertTrue(rn1.compareTo(rn2) > 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_CXXXIII_CXV() {
+		
+		RomanNumeral rn1 = new RomanNumeral("CXXXIII");
+		RomanNumeral rn2 = new RomanNumeral("CXV");
+		
+		assertTrue(rn1.compareTo(rn2) > 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_DVIII_MDVIII() {
+		
+		RomanNumeral rn1 = new RomanNumeral("DVIII");
+		RomanNumeral rn2 = new RomanNumeral("MDVIII");
+		
+		assertTrue(rn1.compareTo(rn2) < 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_CMXLIII_CMLXXVIII() {
+		
+		RomanNumeral rn1 = new RomanNumeral("CMXLIII");
+		RomanNumeral rn2 = new RomanNumeral("CMLXXVIII");
+		
+		assertTrue(rn1.compareTo(rn2) < 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_CDLIX_CDLIX() {
+		
+		RomanNumeral rn1 = new RomanNumeral("CDLIX");
+		RomanNumeral rn2 = new RomanNumeral("CDLIX");
+		
+		assertTrue(rn1.compareTo(rn2) == 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_MMCCCLVIII_LV() {
+		
+		RomanNumeral rn1 = new RomanNumeral("MMCCCLVIII");
+		RomanNumeral rn2 = new RomanNumeral("LV");
+		
+		assertTrue(rn1.compareTo(rn2) > 0);
+	}
+	
+	
+	@Test
+	public void shouldCompareInstances_MMMCCCXXX_MMCCCXVIII() {
+		
+		RomanNumeral rn1 = new RomanNumeral("MMMCCCXXX");
+		RomanNumeral rn2 = new RomanNumeral("MMCCCXVIII");
+		
+		assertTrue(rn1.compareTo(rn2) > 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_MIX_XCIV() {
+		
+		RomanNumeral rn1 = new RomanNumeral("MIX");
+		RomanNumeral rn2 = new RomanNumeral("XCIV");
+		
+		assertTrue(rn1.compareTo(rn2) > 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_DCLXXI_DCLXIX() {
+		
+		RomanNumeral rn1 = new RomanNumeral("DCLXXI");
+		RomanNumeral rn2 = new RomanNumeral("DCLXIX");
+		
+		assertTrue(rn1.compareTo(rn2) > 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_XXVI_CCCXIV() {
+		
+		RomanNumeral rn1 = new RomanNumeral("XXVI");
+		RomanNumeral rn2 = new RomanNumeral("CCCXIV");
+		
+		assertTrue(rn1.compareTo(rn2) < 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_LXXVIII_CCLXXXVIII() {
+		
+		RomanNumeral rn1 = new RomanNumeral("LXXVIII");
+		RomanNumeral rn2 = new RomanNumeral("CCLXXXVIII");
+		
+		assertTrue(rn1.compareTo(rn2) < 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_MIX_MXX() {
+		
+		RomanNumeral rn1 = new RomanNumeral("MIX");
+		RomanNumeral rn2 = new RomanNumeral("MXX");
+		
+		assertTrue(rn1.compareTo(rn2) < 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_CXXI_XVI() {
+		
+		RomanNumeral rn1 = new RomanNumeral("CXXI");
+		RomanNumeral rn2 = new RomanNumeral("XVI");
+		
+		assertTrue(rn1.compareTo(rn2) > 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_V_XX() {
+		
+		RomanNumeral rn1 = new RomanNumeral("V");
+		RomanNumeral rn2 = new RomanNumeral("XX");
+		
+		assertTrue(rn1.compareTo(rn2) < 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_XX_V() {
+		
+		RomanNumeral rn1 = new RomanNumeral("XX");
+		RomanNumeral rn2 = new RomanNumeral("V");
+		
+		assertTrue(rn1.compareTo(rn2) > 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_CLVI_LXXXVII() {
+		
+		RomanNumeral rn1 = new RomanNumeral("CLVI");
+		RomanNumeral rn2 = new RomanNumeral("LXXXVII");
+		
+		assertTrue(rn1.compareTo(rn2) > 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_CXXXI_CLXXXV() {
+		
+		RomanNumeral rn1 = new RomanNumeral("CXXXI");
+		RomanNumeral rn2 = new RomanNumeral("CLXXXV");
+		
+		assertTrue(rn1.compareTo(rn2) < 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_MMLXV_MMMLXV() {
+		
+		RomanNumeral rn1 = new RomanNumeral("MMLXV");
+		RomanNumeral rn2 = new RomanNumeral("MMMLXV");
+		
+		assertTrue(rn1.compareTo(rn2) < 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_MMMDCLXVI_DCCCXCI() {
+		
+		RomanNumeral rn1 = new RomanNumeral("MMMDCLXVI");
+		RomanNumeral rn2 = new RomanNumeral("DCCCXCI");
+		
+		assertTrue(rn1.compareTo(rn2) > 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_IV_IV() {
+		
+		RomanNumeral rn1 = new RomanNumeral("IV");
+		RomanNumeral rn2 = new RomanNumeral("IV");
+		
+		assertTrue(rn1.compareTo(rn2) == 0);
+	}
+	
+	@Test
+	public void shouldCompareInstances_MCMXXXIX_MCMXL() {
+		
+		RomanNumeral rn1 = new RomanNumeral("MCMXXXIX");
+		RomanNumeral rn2 = new RomanNumeral("MCMXL");
+		
+		assertTrue(rn1.compareTo(rn2) < 0);
+	}
+
+	@Test
+	public void testToString_CM() {
+		assertEquals("CM", new RomanNumeral("CM").toString());
+	}
+	
+	@Test
+	public void testToString_X() {
+		assertEquals("X", new RomanNumeral("X").toString());
+	}
+	
+	@Test
+	public void testToString_MMII() {
+		assertEquals("MMII", new RomanNumeral("MMII").toString());
+	}
+	
+	@Test
+	public void testToString_DCCLIV() {
+		assertEquals("DCCLIV", new RomanNumeral("DCCLIV").toString());
+	}
+	
+	@Test
+	public void testToString_CLXXXI() {
+		assertEquals("CLXXXI", new RomanNumeral("CLXXXI").toString());
+	}
+	
+	@Test
+	public void testToString_MDCLIX() {
+		assertEquals("MDCLIX", new RomanNumeral("MDCLIX").toString());
+	}
+
+	@Test
+	public void testToString_MMMDXCIX() {
+		assertEquals("MMMDXCIX", new RomanNumeral("MMMDXCIX").toString());
+	}
+	
+	@Test
+	public void testToString_DCXC() {
+		assertEquals("DCXC", new RomanNumeral("DCXC").toString());
+	}
+	
+	@Test
+	public void testToString_LII() {
+		assertEquals("LII", new RomanNumeral("LII").toString());
+	}
+	
+	@Test
+	public void testToString_CCXXXV() {
+		assertEquals("CCXXXV", new RomanNumeral("CCXXXV").toString());
+	}
+	
+	@Test
+	public void testToString_CMLXXVII() {
+		assertEquals("CMLXXVII", new RomanNumeral("CMLXXVII").toString());
+	}
+	
+	@Test
+	public void testToString_MMMDCIX() {
+		assertEquals("MMMDCIX", new RomanNumeral("MMMDCIX").toString());
+	}
+	
+	@Test
+	public void testToString_CDLXXXVIII() {
+		assertEquals("CDLXXXVIII", new RomanNumeral("CDLXXXVIII").toString());
+	}
+	
+	@Test
+	public void testToString_MMCCXCI() {
+		assertEquals("MMCCXCI", new RomanNumeral("MMCCXCI").toString());
+	}
+	
+	@Test
+	public void testToString_LXXVI() {
+		assertEquals("LXXVI", new RomanNumeral("LXXVI").toString());
+	}
+	
+	@Test
+	public void testToString_DCCCLIV() {
+		assertEquals("DCCCLIV", new RomanNumeral("DCCCLIV").toString());
+	}
+	
+	@Test
+	public void testToString_MMCCLXXVII() {
+		assertEquals("MMCCLXXVII", new RomanNumeral("MMCCLXXVII").toString());
+	}
+	
+	@Test
+	public void testToString_DCCXLIV() {
+		assertEquals("DCCXLIV", new RomanNumeral("DCCXLIV").toString());
+	}
+	
+	@Test
+	public void testToString_DCCLXXXII() {
+		assertEquals("DCCLXXXII", new RomanNumeral("DCCLXXXII").toString());
+	}
+	
+	@Test
+	public void testToString_MMMDXLII() {
+		assertEquals("MMMDXLII", new RomanNumeral("MMMDXLII").toString());
+	}
+	
+	@Test
+	public void testToString_CMXXXIV() {
+		assertEquals("CMXXXIV", new RomanNumeral("CMXXXIV").toString());
+	}
+	
+	@Test
+	public void testToString_CCIII() {
+		assertEquals("CCIII", new RomanNumeral("CCIII").toString());
+	}
+	
+	@Test
+	public void testToString_MMXXXIV() {
+		assertEquals("MMXXXIV", new RomanNumeral("MMXXXIV").toString());
+	}
+	
+	@Test
+	public void testToString_MMMCCIX() {
+		assertEquals("MMMCCIX", new RomanNumeral("MMMCCIX").toString());
+	}
+	
+	@Test
+	public void testToString_XLIX() {
+		assertEquals("XLIX", new RomanNumeral("XLIX").toString());
+	}
+	
+	@Test
+	public void testToString_CXL() {
+		assertEquals("CXL", new RomanNumeral("CXL").toString());
+	}
+	
+	@Test
+	public void testToString_MMMCDLIII() {
+		assertEquals("MMMCDLIII", new RomanNumeral("MMMCDLIII").toString());
+	}
+	
+	@Test
+	public void testToString_MXXXII() {
+		assertEquals("MXXXII", new RomanNumeral("MXXXII").toString());
+	}
+	
+	@Test
+	public void testToString_CMLXVII() {
+		assertEquals("CMLXVII", new RomanNumeral("CMLXVII").toString());
+	}
+	
+	@Test
+	public void testToString_DCCLXX() {
+		assertEquals("DCCLXX", new RomanNumeral("DCCLXX").toString());
+	}
+	
+	@Test
+	public void testToString_DX() {
+		assertEquals("DX", new RomanNumeral("DX").toString());
+	}
+	
 	
 
 }

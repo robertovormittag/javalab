@@ -26,20 +26,11 @@ public class RomanNumeral implements Comparable <RomanNumeral>{
 			this.roman = number;
 		}
 		
-		// TODO implement this
-		public static int intValue(String roman) {
-			
-			return 0;
-		}
-		
-		
-		
-		
 		/**
 		 * Method that takes the Roman Number and assigns to it the correct decimal translation
 		 * @return integer number equivalent of the Roman number
 		 */
-		public int convertToInteger ()  {
+		public static int intValue (String roman)  {
 			
 			int decimal = 0;
 			int lastNumber = 0;
@@ -91,6 +82,14 @@ public class RomanNumeral implements Comparable <RomanNumeral>{
 			}
 			
 			return decimal;
+
+			
+		}
+		
+		public int intValue() {
+			
+			int rn = RomanNumeral.intValue(roman);
+			return rn;
 		}
 		
 			 /**
@@ -109,23 +108,9 @@ public class RomanNumeral implements Comparable <RomanNumeral>{
 			        } else {
 
 			            return lastDecimal + decimal;
-
-
 			        }
 			    }
-			
-
 			  
-			  
-			  
-		
-			 /**
-			  * Method that check if the Roman Number is correct
-			  * @exception IllegalArgumentException if the number is null
-			  * @exception IllegalArgumentException if the number is a empty string
-			  * @exception IllegalArgumentException if the number is a invalid Roman number
-			  * @param number
-			  */
 			 private void validateState(String number){
 				
 		           if (number == null)
@@ -141,9 +126,7 @@ public class RomanNumeral implements Comparable <RomanNumeral>{
 		    }
 			 
 			 
-			 /**
-			  * 
-			  */
+			 
 			 @Override
 			 public boolean equals(Object obj){
 				    if ((obj instanceof RomanNumeral)) {
@@ -159,9 +142,8 @@ public class RomanNumeral implements Comparable <RomanNumeral>{
 				        return false;
 				    }
 				}
-			 /**
-			  * 
-			  */
+			 
+			
 			 @Override
 			 public int hashCode(){
 					
@@ -170,20 +152,16 @@ public class RomanNumeral implements Comparable <RomanNumeral>{
 			 
 			 
 			 public int compareTo(RomanNumeral other){				 
-				   // Compare RomanNumber
-				 if (this.convertToInteger()<other.convertToInteger())
-					 return -1;
-				 if(this.convertToInteger()>other.convertToInteger())
-					 return 1;
-				return 0;
 				    
-				   //return this.convertToInteger() -  other.convertToInteger();
+				  return this.intValue() -  other.intValue();
 				 
 				 	  }
 			 
-			// TODO override toString()
 			 
-			
+			@Override
+			public String toString() {
+				return roman.toString();
+			}
 			
 	}
 
