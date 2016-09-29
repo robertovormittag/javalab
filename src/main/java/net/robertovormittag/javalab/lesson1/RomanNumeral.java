@@ -44,6 +44,8 @@ public class RomanNumeral implements Comparable<RomanNumeral> {
 	 * @return integer number equivalent of this Roman number
 	 */
 	public int intValue() {
+		
+		int b = RomanNumeral.intValue(roman);
 
 		int decimal = 0;
 		int lastNumber = 0;
